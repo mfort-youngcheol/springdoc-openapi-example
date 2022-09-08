@@ -28,7 +28,7 @@ class UserController {
     @GetMapping("/{id}")
     fun getUser(
         @PathVariable("id") id: Long,
-        @Parameter(name = "보여지는 파라미터", description = "보여지는 파라미터에 대한 값입니다") @RequestParam show: String,
+        @Parameter(description = "보여지는 파라미터에 대한 값입니다") @RequestParam show: String,
         @Parameter(hidden = true) @RequestParam hidden: String,
     ): UserInfoResponse =
         UserInfoResponse(
