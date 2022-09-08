@@ -21,7 +21,7 @@ class DocumentationConfiguration {
                         .version("1.0")
                 )
             }
-            .pathsToMatch("/users/**") // based on api endpoint
+            .pathsToMatch("/users/**", "/**") // based on api endpoint
             .build()
     }
 }
